@@ -10,14 +10,131 @@ html {
 
 body {
   min-height: 100%;
-  font-family: sans-serif;
-  overflow-x: hidden;
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url(./Assets/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-  z-index: 2;
   width: 450px;
-  outline: 3px solid orange;
+  height: 697px;
+  background: #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.sub-container {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px 48px 48px;
+  gap: 17px;
+}
+
+header img {
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+}
+
+.sub-container h1 {
+  font-family: "Red Hat Display", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  color: #1f2e55;
+}
+
+.sub-container p {
+  font-family: "Red Hat Display", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #717fa6;
+}
+
+.payment-plan {
+  width: 345px;
+  display: flex;
+  background: #f7f9ff;
+  border-radius: 20px;
+  padding: 25px 24px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.payment-plan div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.payment-plan a {
+  flex: 1 0 auto;
+  text-align: end;
+}
+
+.payment-plan div p {
+  color: #717fa6;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.payment-plan div p:first-child {
+  color: #1f2e55;
+  font-weight: 900;
+}
+
+a {
+  color: #382ae1;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #766cf1;
+}
+
+button {
+  font-family: "Red Hat Display", sans-serif;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.process-payment:hover {
+  background: #766cf1;
+}
+
+.process-payment {
+  padding: 15px 102px;
+  border-radius: 11px;
+  border: none;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+  color: #ffffff;
+  background: #382ae1;
+}
+
+.cancel-order:hover {
+  color: #1f2e55;
+}
+
+.cancel-order {
+  background: none;
+  border: none;
+  color: #717fa6;
 }
 
 /* curve background */

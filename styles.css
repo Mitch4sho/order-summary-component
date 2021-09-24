@@ -53,7 +53,7 @@ header img {
   color: #1f2e55;
 }
 
-.sub-container p {
+.text-box {
   font-family: "Red Hat Display", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -135,6 +135,54 @@ button {
   background: none;
   border: none;
   color: #717fa6;
+}
+
+/* mobile responsiveness */
+@media (max-width: 500px) {
+  .container {
+    width: 327px;
+    height: 567px;
+    gap: 32px;
+  }
+
+  .sub-container {
+    justify-content: flex-start;
+    padding: 0;
+    gap: 0px;
+  }
+
+  header img {
+    width: 327px;
+  }
+
+  .sub-container h1 {
+    margin-bottom: 13px;
+  }
+
+  .text-box {
+    width: 263px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 27px;
+  }
+
+  .payment-plan {
+    width: 297px;
+    height: 81px;
+    padding: 17px 16px 16px 16px;
+    margin-bottom: 24px;
+  }
+
+  button {
+    width: 279px;
+  }
+
+  .process-payment {
+    padding: 15px 64px;
+    margin: 0 24px 24px 24px;
+  }
 }
 
 /* curve background */
